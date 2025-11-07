@@ -70,7 +70,7 @@ Each submodule was tested and verified before being integrated into the **top-le
   - 1% Slice LUTs  
   - 1% Occupied Slices  
   - 7% IOBs  
-- This demonstrates the processor’s efficient hardware implementation.  
+- This demonstrates the processor’s efficient sysnthesis implementation.  
   👉 https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive-ise.html
 
 ---
@@ -96,11 +96,12 @@ Each submodule was tested and verified before being integrated into the **top-le
 ## 🚀 Tools and Technologies Used
 | Category | Tool / Platform | Description |
 |-----------|-----------------|--------------|
-| Simulator | Ripes Simulator | For compiling and testing RISC-V code 👉 *[Add Link]* |
-| Compiler | RISC-V GCC Toolchain | To generate machine code from C 👉 *[Add Link]* |
+| Simulator | Ripes Simulator | For compiling and testing RISC-V code 👉 * https://github.com/mortbopet/Ripes/releases/download/v2.2.6/Ripes-v2.2.6-win-x86_64.zip
+* |
+| Compiler | RISC-V GCC Toolchain | To generate machine code from C 👉 *[https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-w64-mingw32.zip]* |
 | HDL | Verilog | Hardware description of processor |
-| Simulator | ModelSim | For waveform and behavior simulation 👉 *[Add Link]* |
-| Synthesizer | Xilinx ISE Design Suite | For FPGA synthesis and device utilization 👉 *[Add Link]* |
+| Simulator | ModelSim | For waveform and behavior simulation 👉 *https://www.intel.com/content/www/us/en/software-kit/750666/modelsim-intel-fpgas-standard-edition-software-version-20-1-1.html* |
+| Synthesizer | Xilinx ISE Design Suite | For FPGA synthesis and device utilization 👉 *[https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive-ise.html]* |
 | Version Control | GitHub | For source code management and documentation |
 
 ---
