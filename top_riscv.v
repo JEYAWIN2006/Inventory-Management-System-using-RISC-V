@@ -1,0 +1,102 @@
+module top_riscv(input clk, input reset);
+
+    wire [31:0] instr, imm, alu_result, reg_rdata1, reg_rdata2;
+    wire [31:0] dmem_rdata, reg_wdata, alu_op2;
+    wire [31:0] next_pc;
+    wire [3:0]  alu_ctrl;
+    wire branch_taken;
+    wire reg_we, dmem_we;
+    wire [31:0] pc;
+
+  
+    // INSTRUCTION MEMORY
+    
+    instr_mem imem(
+        .addr(pc),
+        .instr(instr)
+    );
+
+  
+    // IMMEDIATE GENERATOR
+    imm_gen ig(
+        .instr(instr),
+        .imm(imm)
+    );
+
+    
+    // REGISTER FILE
+    
+    regfile rf(
+        .clk(clk),
+        .we(reg_we),
+        .raddr1(instr[19:15]),
+        .raddr2(instr[24:20]),
+        .waddr(instr[11:7]),
+        .wdata(reg_wdata),
+        .rdata1(reg_rdata1),
+        .rdata2(reg_rdata2)
+    );
+
+    
+    // ALU CONTROL
+    
+    alu_control alu_ctrl_unit(
+        .opcode(instr[6:0]),
+        .funct3(instr[14:12]),
+        .funct7(instr[31:25]),
+        .alu_ctrl(alu_ctrl)
+    );
+
+    
+    // ALU
+    
+    alu alu_unit(
+        .op1(reg_rdata1),
+        .op2(alu_op2),
+        .alu_ctrl(alu_ctrl),
+        .result(alu_result)
+    );
+
+    
+    // BRANCH LOGIC
+ 
+    branch branch_unit(
+        .op1(reg_rdata1),
+        .op2(reg_rdata2),
+        .branch_en(instr[6:0] == 7'b1100011),
+        .branch_taken(branch_taken)
+    );
+
+    // DATA MEMORY
+    
+    data_mem dmem(
+        .clk(clk),
+        .we(dmem_we),
+        .addr(alu_result),
+        .wdata(reg_rdata2),
+        .rdata(dmem_rdata)
+    );
+
+    
+    // MAIN SINGLE-CYCLE CPU CORE
+    
+    single_cycle_riscv core(
+        .clk(clk),
+        .reset(reset),
+        .instr(instr),
+        .reg_rdata1(reg_rdata1),
+        .reg_rdata2(reg_rdata2),
+        .dmem_rdata(dmem_rdata),
+        .imm(imm),
+        .alu_ctrl(alu_ctrl),
+        .branch_taken(branch_taken),
+        .pc(pc),
+        .next_pc(next_pc),
+        .alu_result(alu_result),
+        .reg_we(reg_we),
+        .dmem_we(dmem_we),
+        .reg_wdata(reg_wdata),
+        .alu_op2(alu_op2)
+    );
+
+endmodule

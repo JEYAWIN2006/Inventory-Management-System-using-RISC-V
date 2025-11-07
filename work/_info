@@ -1,0 +1,195 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Inventory
+valu
+!i10b 1
+Z1 !s100 RUabD[z6Nff:VRLES?7bT3
+Z2 IX_dh>A>;7^`kCMXTNaUO@3
+Z3 V9[eCBCB?1mTWOmV6O=Dmd0
+Z4 dE:\Inventory
+Z5 w1761589306
+Z6 8alu.v
+Z7 Falu.v
+L0 1
+Z8 OV;L;10.1e;51
+r1
+!s85 0
+31
+Z9 !s108 1762425006.502000
+Z10 !s107 top_riscv.v|testbench.v|single_cycle_riscv.v|regfile.v|instr_mem.v|imm_gen.v|data_mem.v|branch.v|alu_control.v|alu.v|
+Z11 !s90 -reportprogress|300|alu.v|alu_control.v|branch.v|data_mem.v|imm_gen.v|instr_mem.v|regfile.v|single_cycle_riscv.v|testbench.v|top_riscv.v|
+!s101 -O0
+o-O0
+valu_control
+!i10b 1
+Z12 !s100 C]gF77AVX>>jWVk=mYQJP3
+Z13 I=?hjzBQZba4@EHhGSen6E2
+Z14 VKnTFQTPA5Jgd@=;m3>6[V0
+R4
+Z15 w1761677091
+Z16 8alu_control.v
+Z17 Falu_control.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+o-O0
+vbranch
+!i10b 1
+Z18 !s100 Fdfh=m46g5Z1h]0SPgAVo1
+Z19 I<`R20dL;9MJcg?7djZJCI2
+Z20 VcBFbTgBE@RgQUJEPSzVIP2
+R4
+Z21 w1761677068
+Z22 8branch.v
+Z23 Fbranch.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+o-O0
+vdata_mem
+!i10b 1
+Z24 !s100 U;WO33PMBV3V?l?K3206a2
+Z25 ID1i[QVXCN:[QaTHmZije22
+Z26 V48n=]fz2CZLf2WDJLB[<03
+R4
+R5
+Z27 8data_mem.v
+Z28 Fdata_mem.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+o-O0
+vimm_gen
+!i10b 1
+Z29 !s100 lgJkm8Y4B64c2eT>R5M4T0
+Z30 In@A[NN?:`k@nYS?C5T2>h0
+Z31 VzA2MQ<g9?Nl`o:`3Q5i5=3
+R4
+R5
+Z32 8imm_gen.v
+Z33 Fimm_gen.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+o-O0
+vinstr_mem
+!i10b 1
+Z34 !s100 8Yea4aO:Y<:7V5eKRo8@T2
+Z35 InkME>JS<SkB9j1Y3?HcYF2
+Z36 VbEDlbo6DKi_^2PnOMDMCf2
+R4
+Z37 w1761676904
+Z38 8instr_mem.v
+Z39 Finstr_mem.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+o-O0
+vregfile
+!i10b 1
+Z40 !s100 _Y6h1DdKHXQ_`KI^7clQJ1
+Z41 IVnlfeGefYJ_g29_[nWG5O2
+Z42 VE?POO2YKfS9R8DU@WHZc^1
+R4
+R5
+Z43 8regfile.v
+Z44 Fregfile.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+o-O0
+vsingle_cycle_riscv
+!i10b 1
+Z45 !s100 F=14;KIQjEb9e^FVYOD<h2
+Z46 IP0NhPFbcUK9zge>^7TE[^1
+Z47 V=^=9=Ea]WHT@OeBlXYO>f0
+R4
+Z48 w1761672584
+Z49 8single_cycle_riscv.v
+Z50 Fsingle_cycle_riscv.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+o-O0
+vtestbench
+!i10b 1
+Z51 !s100 CS56PKcRJZ_3`kC^[92FR3
+Z52 I6o?@AQbe0HO7R27jZfUoS0
+Z53 VhGfW:390DM[oDMzegDH9`2
+R4
+Z54 w1761675891
+Z55 8testbench.v
+Z56 Ftestbench.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+o-O0
+vtop_riscv
+!i10b 1
+Z57 !s100 E82UQRo?O@bz;Ynf_<Do;1
+Z58 I=;D18h=cWgL@`<?g:_0cP3
+Z59 Vcc1;9V7^?1P]afi72A:ln3
+R4
+Z60 w1761671152
+Z61 8top_riscv.v
+Z62 Ftop_riscv.v
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+o-O0
