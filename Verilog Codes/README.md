@@ -63,7 +63,7 @@ Each submodule was tested and verified before being integrated into the **top-le
 
 ---
 
-### 🧮 Step 6 — FPGA Synthesis in Xilinx ISE
+### 🧮 Step 6 — Report Synthesis in Xilinx ISE
 - The Verilog design was synthesized using **Xilinx ISE Design Suite**.  
 - The **Device Utilization Summary** confirmed that the design used minimal FPGA resources:
   - 1% Slice Registers  
@@ -88,7 +88,7 @@ Each submodule was tested and verified before being integrated into the **top-le
 - Modular Verilog design (easy to extend or modify)
 - Supports arithmetic, logical, branch, and memory operations
 - Tested using Ripes and ModelSim
-- Synthesized on Xilinx ISE for FPGA implementation
+- Synthesized on Xilinx ISE for Report implementation
 - Demonstrates an embedded Inventory Management application
 
 ---
@@ -137,9 +137,13 @@ The design’s simplicity, modularity, and educational focus make it an excellen
 ## 👤 Author
 **JEYAWIN GJ**  
 Electronics and Communication Engineering  
+
 MEPCO SCHLENK ENGINNERING COLLEGE
+
 SIVAKSI,TAMILNADU
+
 626005.
-INDIA
+
 Ph no:+917708291572
+
 E-mail:gjeyawin@gmail.com
